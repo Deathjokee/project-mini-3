@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+    <h1>Danh mục sản phẩm</h1>
+    <div id="category" class="category"></div>
+    
+    <h1>Danh sách sản phẩm</h1>
+
+    <div id="search">
+      <input class="search__inputSearch" type="text">
+      <button class="search__buttonSearch">Search</button>
+    </div>
+
+    <select id="dropdown">
+      <option value="def">Mặc định</option>
+      <option value="asc">Giá thấp đến cao</option>
+      <option value="desc-price">Giá cao đến thấp</option>
+      <option value="desc-disCount">Giảm giá nhiều</option>
+    </select>
+
+    <div id="products" class="products">
+      <div class="products__item">
+        <div class="products__item__img">
+          <img src="" alt="">
+          <span class="products__item__img--disCount">
+          </span>
+        </div>
+        <div class="products__item__information">
+          <div class="products__item__information--name"></div>
+          <span class="products__item__information--price"></span>
+          <span class="products__item__information--quantity"></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="pagination" class="pagination">
+      <button class="pagination--prev">Prev</button>
+      <span class="pagination--number">1</span>
+      <button class="pagination--next">Next</button>
+    </div>
+  
+    <script type="module" src="./assets/JS/main.js"></script>
+  </body>
+</html>
